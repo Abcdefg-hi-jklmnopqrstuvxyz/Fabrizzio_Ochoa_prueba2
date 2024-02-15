@@ -15,4 +15,17 @@ public class Hotel extends Hospederia{
     public void setConDesayuno(boolean conDesayuno) {
         this.conDesayuno = conDesayuno;
     }
+
+    public int adicional(){
+        int adicion=0;
+        if(this.esFumador==true && this.isConDesayuno() == true){
+            adicion = Math.round(this.subTotal()*30/100);
+        }
+        return adicion;
+    }
+
+    @Override
+    public int valorACancelar() {
+        return subTotal()-bonoDescuento()+adicional();
+    }
 }

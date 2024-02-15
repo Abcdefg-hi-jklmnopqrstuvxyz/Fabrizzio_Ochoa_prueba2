@@ -15,6 +15,4 @@ public class Carpa extends mediosAlojamiento{
     public void setCantidadPersonas(int cantidadPersonas) {
         this.cantidadPersonas = cantidadPersonas;
     }
-
-
 }

@@ -44,4 +44,21 @@ public class mediosAlojamiento {
         this.valorBaseNoche = valorBaseNoche;
         this.cantidadDeNoches = cantidadDeNoches;
     }
+
+    public int subTotal(){
+        return cantidadDeNoches * valorBaseNoche;
+    }
+
+    public int bonoDescuento(){
+        int descuento=0;
+        if(this.tipoTemporada.equalsIgnoreCase("baja")){
+            descuento= Math.round(this.subTotal() * 25/100);
+        }else if (this.tipoTemporada.equalsIgnoreCase("media")){
+            descuento= (int) Math.round(this.subTotal() * 12.5/100);
+        }
+        return descuento;
+    }
+
+
+
 }

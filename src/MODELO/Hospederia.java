@@ -1,6 +1,6 @@
 package MODELO;
 
-public class Hospederia extends mediosAlojamiento{
+public abstract class Hospederia extends mediosAlojamiento{
     protected boolean esFumador;
     protected int capacidad;
 
@@ -25,4 +25,7 @@ public class Hospederia extends mediosAlojamiento{
         this.esFumador = esFumador;
         this.capacidad = capacidad;
     }
+
+    public abstract int valorACancelar();
+
 }
