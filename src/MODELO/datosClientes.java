@@ -2,7 +2,7 @@ package MODELO;
 
 public class datosClientes {
     private String nombre;
-    private  int rutCliente;
+    private  String rutCliente;
 
     public String getNombre() {
         return nombre;
@@ -12,14 +12,14 @@ public class datosClientes {
         this.nombre = nombre;
     }
 
-    public int getRutCliente() {
+    public String getRutCliente() {
         return rutCliente;
     }
 
-    public void setRutCliente(int rutCliente) {
+    public void setRutCliente(String rutCliente) {
         this.rutCliente = rutCliente;
     }
-    public datosClientes(String nombre, int rutCliente) {
+    public datosClientes(String nombre, String rutCliente) {
         this.nombre = nombre;
         this.rutCliente = rutCliente;
     }

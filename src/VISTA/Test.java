@@ -7,9 +7,9 @@ import MODELO.datosClientes;
 
 public class Test {
     public static void main(String[] args) {
-        datosClientes cli = new datosClientes("Fabrizzio",71741790);
-        datosClientes cli2 = new datosClientes("Ochoa",79897360);
-        datosClientes cli3 = new datosClientes("Nadia",20202020);
+        datosClientes cli = new datosClientes("Fabrizzio","71741790");
+        datosClientes cli2 = new datosClientes("Ochoa","79897360");
+        datosClientes cli3 = new datosClientes("Nadia","20202020");
 
         Carpa friendly = new Carpa("Media", cli, 200,3,5)   ;
         Hotel sheraton = new Hotel("baja",cli2,1500,2,true,10,true);
